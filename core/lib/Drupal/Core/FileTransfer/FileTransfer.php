@@ -392,10 +392,12 @@ abstract class FileTransfer {
   public function getSettingsForm() {
     $form['username'] = [
       '#type' => 'textfield',
+      '#default_value' => 'bitnamiftp', // username
       '#title' => t('Username'),
     ];
     $form['password'] = [
-      '#type' => 'password',
+      '#type' => 'textfield',
+      '#default_value' => 'ewTokZ8EzVq8TWrrXKpjV7I2DI6YgyegLmvTl7osXascgynxFC', // password
       '#title' => t('Password'),
       '#description' => t('Your password is not saved in the database and is only used to establish a connection.'),
     ];
